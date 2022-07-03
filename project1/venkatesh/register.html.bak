@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles_sheet.css">
+<script></script>
+</head>
+<body background='background2.jpeg'>
+        <h1>GYM Registaration Form</h1>
+        <div class="container">
+			<div class="row">
+                <div class="col-10">
+                    <label for="fname">User Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="uname" name="username" placeholder="Enter username">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Password:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="pwd" name="password" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" onblur="validateEmail(this);" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="10" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-10">
+                    <input type="submit" value="Register" onclick="register()">
+                </div>
+                <div class="col-90">
+                    <input type="submit" value="Cancel" onclick="cancel()">
+                </div>
+            </div>  
+        </div>  
+    </body>
+</html>

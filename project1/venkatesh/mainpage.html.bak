@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles_sheet.css">
+<script>
+function signup()
+{
+	location.replace("register.html")
+}
+function login()
+{
+	location.replace("login.html")
+}
+</script>
+</head>
+<body background='background.jpeg'>
+        <h2>Anytime Fitness</h2>
+        <div class="container">
+			<br>
+				<h3>Welcome to Anytime Fitness GYM Sign-Up for registration</h3>
+			<br>
+            <div class="row">
+                <div class="col-10">
+                    <input type="submit" value="Sign-Up" onclick="signup()"/>
+                </div>
+            </div>  
+			<br>
+			<div class="row">
+                <div class="col-10">
+                    <input type="submit" value="Log-In" onclick="login()"/>
+                </div>
+            </div> 
+			<br>
+        </div>  
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles_sheet.css">
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body background='background2.jpeg'>
+        <h1>GYM User Login</h1>
+        <div class="container">
+			<div class="row">
+                <div class="col-10">
+                    <label for="fname">UserName:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="uname2" name="username" placeholder="Enter username">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Password:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="pwd2" name="password" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-10">
+                    <input type="submit" value="Log-In" onclick="checkEqual()">
+                </div>
+                <div class="col-90">
+                    <input type="submit" value="Cancel" onclick="cancel()">
+                </div>
+            </div>  
+        </div>  
+    </body>
+</html>
